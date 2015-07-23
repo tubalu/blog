@@ -67,3 +67,11 @@ function () {
 ```
 ## hyper links
 [Visit GitHub!](https://www.github.com)
+
+
+# table
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
