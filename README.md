@@ -59,7 +59,8 @@ code format inline 2
 
 code format inline 2
 ```
-'''javascript
+
+``` javascript
 function () {
     console.log('high light code format');
 }
