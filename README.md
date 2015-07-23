@@ -52,3 +52,10 @@
 ## code format
 ` Here's an idea: why don't we take `SuperiorProject` and turn it into `**Reasonable**Project`.
 
+```
+code format inline 1
+
+code format inline 2
+
+code format inline 2
+```
