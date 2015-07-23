@@ -59,5 +59,10 @@ code format inline 2
 
 code format inline 2
 ```
+'''javascript
+function () {
+    console.log('high light code format');
+}
+```
 ## hyper links
 [Visit GitHub!](https://www.github.com)
