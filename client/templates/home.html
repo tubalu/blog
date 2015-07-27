@@ -1,10 +1,13 @@
 <template name="home">
-
+<!--
 {{#markdown}}
 ## Welcome to my Blog 1
 Here I'm talking about my latest discoveries from the world of
 JavaScript.
 {{/markdown}}
+
+<h2> This comes from our SESSION: <strong> {{sessionExample}}</strong>
+</h2>
 
 {{#with dataContextHelper}}
     {{> contextExample}}
@@ -15,12 +18,18 @@ JavaScript.
 {{else}}
     <span>Some warning</span>
 {{/blockHelperExample}}
-
+-->
 <h1> Blogs </h1>
+{{#if currentUser}}
+    <a href="/create-post" class="createNewPost">Create new post</a>
+{{/if}}
+
+
 {{#each postsList}}
     {{> postInList}}
 {{/each}}
 
-<h1> /Blogs </h1>
+<button class='lazyload'> Load More </button>
+
 
 </template>

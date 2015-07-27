@@ -10,11 +10,25 @@
                     <a href="/about">About</a>
                 </li>
             </ul>
+            {{> loginButtons}}
         </div>
     </header>
     <div class="container">
         <main>
-            {{> home}}
+            {{> yield}}
         </main>
     </div>
 </template>
+<template name='notFound'>
+    <div class='center'>
+        <h1>Nothing is here</h1>
+        <br>
+        <h2>You hit a page which doesnot exist!</h2>
+    </div>
+</template>
+<template name="laoding">
+    <div class="center">
+        <h1>Loading</h1>
+    </div>
+</template>
+

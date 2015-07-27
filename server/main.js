@@ -71,6 +71,37 @@ Meteor.startup(function() {
 			Posts.insert(post);
 		});
 	}
+	if (Meteor.users.find().count() === 0) {
+		console.log('Createed Admin User');
+
+		Accounts.createUser({
+			username: 'scott',
+			email: 'qingcai@gmail.com',
+			password: '1234',
+			profile: {
+				name: 'Scott Lu'
+			}
+		});
+	}
+
+	Meteor.users.update("B75MCSZpukMHqZd7q", {
+		$set: {
+			roles: {
+				admin: true
+			}
+		}
+	});
+	console.log("update user admin done");
 
 });
+
+
+Accounts.config({
+	forbidClientAccountCreation: true
+});
+
+
+if (Meteor.isClient) {
+	Meteor.subscribe("userRoles");
+}
 
